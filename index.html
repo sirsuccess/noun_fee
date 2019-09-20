@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FEE</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="container">
+  
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="exampleFormControlSelect1">LEVEL:</label>
+          <select class="form-control level" id="exampleFormControlSelect1">
+            <option selected disabled value="">LEVEL</option>
+            <option value="18000">Undergraduate</option>
+            <option value="">Post Graduate</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="exampleFormControlSelect1">STUDENT:</label>
+          <select class="form-control level" id="exampleFormControlSelect1">
+            <option class="bg-secondary text-white" disabled value="">--Undergraduate--</option>
+            <option value="36000">New Student</option>
+            <option value="18000">Returning Student</option>
+            <option disabled class="bg-secondary text-white" value="">--Post Graduate--</option>
+            <option value="35000">New Student</option>
+            <option value="18000">Returning Student</option>
+          </select>
+        </div>
+      </div>
+    
+    <div class="col">
+      NONE EXAMINABLE
+      <br>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" value="150000000" class="custom-control-input project" id="customCheck1">
+        <label class="custom-control-label" for="customCheck1">Project</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" value="0" class="custom-control-input seminar" id="customCheck2">
+        <label class="custom-control-label" for="customCheck2">Seminar</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" value="0" class="custom-control-input" id="customCheck3">
+        <label class="custom-control-label" for="customCheck3">Teaching Practice</label>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" value="0" class="custom-control-input field" id="customCheck4">
+        <label class="custom-control-label" for="customCheck4" >Field trip</label>
+      </div>
+    </div>
+    <ul class="card card1">
+        <div class="fa fa-plus-square text-success"></div>
+        <li class="one-course">
+          <div class="col-sm-2 mb-3">
+            <label for="validationTooltip04">COURSE CODE</label>
+            <input type="text" class="form-control" id="validationTooltip04" placeholder="COURSE CODE" required>
+          </div>
+          <div class="col-sm-3 mb-3">
+            <label for="validationTooltip04">COURSE TITLE</label>
+            <input type="text" class="form-control" id="validationTooltip04" placeholder="COURSE TITLE" required>
+          </div>
+
+          <div class="col-sm-1 mb-3">
+            <label for="validationTooltip04">CU</label>
+            <input type="number" class="form-control cu" oninvalid="alert('You must fill out the form!');" max="10" min="1" id="validationTooltip04" required>
+          </div>
+          <div class="col-sm-1 mb-3 text-center">
+              <label for="exam" >Exam</label>
+              <input type="checkbox" value="1000" class="form-control" id="exam" required>
+            </div>
+            <div class="col-sm-2 mb-3">
+                <label for="validationTooltip04">Amount</label>
+                <input type="text" class="form-control" id="validationTooltip04" placeholder="0" required>
+              </div>
+            
+            <span class="fa fa-window-close text-danger sm"></span>
+          </li>
+    </ul>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          SUMMERY
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Semester registration: <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+          <li class="list-group-item">Non-Exam Courses: <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+          <li class="list-group-item">Course Registration <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+          <li class="list-group-item">Exam Registration <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+        </ul>
+        <div class="card-header">
+            <div class="card-header">
+                Total:  <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+          </div>
+      </div>
+    
+  </div>
+
+
+
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

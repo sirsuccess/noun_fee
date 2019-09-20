@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(102, 195, 238)
+}
+.one-course{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fa-plus-square, .fa-window-close{
+    font-size: 40px;
+}
+
+
+  
+  .cu:valid {
+    background: hsla(100, 90%, 70%, 1);
+  }
