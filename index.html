@@ -24,19 +24,16 @@
           <label for="exampleFormControlSelect1">LEVEL:</label>
           <select class="form-control level" id="exampleFormControlSelect1">
             <option selected disabled value="">LEVEL</option>
-            <option value="18000">Undergraduate</option>
-            <option value="">Post Graduate</option>
+            <option value="Undergraduate">Undergraduate</option>
+            <option value="postGraduate">Post Graduate</option>
           </select>
         </div>
         <div class="form-group col-md-6">
           <label for="exampleFormControlSelect1">STUDENT:</label>
-          <select class="form-control level" id="exampleFormControlSelect1">
-            <option class="bg-secondary text-white" disabled value="">--Undergraduate--</option>
-            <option value="36000">New Student</option>
-            <option value="18000">Returning Student</option>
-            <option disabled class="bg-secondary text-white" value="">--Post Graduate--</option>
-            <option value="35000">New Student</option>
-            <option value="18000">Returning Student</option>
+          <select class="form-control studentStatus" id="exampleFormControlSelect1">
+            <option class="bg-secondary text-white" disabled selected>--Undergraduate--</option>
+            <option value="newStudent">New Student</option>
+            <option value="oldStudent">Returning Student</option>
           </select>
         </div>
       </div>
@@ -45,25 +42,25 @@
       NONE EXAMINABLE
       <br>
       <div class="custom-control custom-checkbox">
-        <input type="checkbox" value="150000000" class="custom-control-input project" id="customCheck1">
+        <input type="checkbox" value="15000" class="custom-control-input project" id="customCheck1">
         <label class="custom-control-label" for="customCheck1">Project</label>
       </div>
       <div class="custom-control custom-checkbox">
-        <input type="checkbox" value="0" class="custom-control-input seminar" id="customCheck2">
+        <input type="checkbox" value="10000" class="custom-control-input seminar" id="customCheck2">
         <label class="custom-control-label" for="customCheck2">Seminar</label>
       </div>
       <div class="custom-control custom-checkbox">
-        <input type="checkbox" value="0" class="custom-control-input" id="customCheck3">
+        <input type="checkbox" value="10000" class="custom-control-input tp" id="customCheck3">
         <label class="custom-control-label" for="customCheck3">Teaching Practice</label>
       </div>
       <div class="custom-control custom-checkbox">
-        <input type="checkbox" value="0" class="custom-control-input field" id="customCheck4">
+        <input type="checkbox" value="10000" class="custom-control-input field" id="customCheck4">
         <label class="custom-control-label" for="customCheck4" >Field trip</label>
       </div>
     </div>
     <ul class="card card1">
         <div class="fa fa-plus-square text-success"></div>
-        <li class="one-course">
+        <li class="one-course" id="am" class="am">
           <div class="col-sm-2 mb-3">
             <label for="validationTooltip04">COURSE CODE</label>
             <input type="text" class="form-control" id="validationTooltip04" placeholder="COURSE CODE" required>
@@ -86,7 +83,7 @@
                 <input type="text" class="form-control" id="validationTooltip04" placeholder="0" required>
               </div>
             
-            <span class="fa fa-window-close text-danger sm"></span>
+              <i  onclick="preview(`am`)" class="fa fa-window-close text-danger sm"></i>
           </li>
     </ul>
     <div class="card" style="width: 18rem;">
@@ -95,13 +92,13 @@
         </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item">Semester registration: <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
-          <li class="list-group-item">Non-Exam Courses: <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
-          <li class="list-group-item">Course Registration <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
-          <li class="list-group-item">Exam Registration <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+          <li class="list-group-item">Non-Exam Courses: <strike class="naira">N</strike> <span class="nonExamTotal"> 0</span></li>
+          <li class="list-group-item">Course Registration <strike class="naira">N</strike> <span class="courseTotal"> 0</span></li>
+          <li class="list-group-item">Exam Registration <strike class="naira">N</strike> <span class="examTotal"> 0</span></li>
         </ul>
         <div class="card-header">
             <div class="card-header">
-                Total:  <strike class="naira">N</strike> <span class="semTotal"> 0</span></li>
+                Total:  <strike class="naira">N</strike> <span class="grantTotal"> 0</span></li>
           </div>
       </div>
     
