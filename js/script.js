@@ -1,21 +1,13 @@
-function preview(certId) {
-  const certList = document.getElementById(certId);
-  certList.remove()
-  
+function preview(id) {
+  const list = document.getElementById(id);
+  list.remove() 
 }
 
 
 
 $(document).ready(function(){
     console.log("am here")
-
-    // function preview(certId) {
-    //     console.log(certId)
-    //     // id.hide("li");
-    // };
-
-
-    
+ 
 
     //add new couse
     $(".fa-plus-square").click(function(){
@@ -32,7 +24,7 @@ $(document).ready(function(){
 
         <div class="col-sm-1 mb-3">
           <label for="validationTooltip04">CU</label>
-          <input type="number" class="form-control cu" oninvalid="alert('You must fill out the form!');" max="10" min="1" id="validationTooltip04" required>
+          <input type="number" class="form-control cu" oninvalid="alert('You must fill out the form!');" max="3" min="1" id="validationTooltip04" required>
         </div>
         <div class="col-sm-1 mb-3 text-center">
             <label for="exam" >Exam</label>
@@ -63,9 +55,9 @@ $(document).ready(function(){
         newLevel = level=="postGraduate"?25000:15000
         studentStatus = $(".studentStatus").val()
         
+        cu = $( ".cu" ).val()
+        // console.log(cu)
         
-        
-        // console.log(tp)
         if(level=="postGraduate" && studentStatus=="newStudent"){
             student=35000
         }else if(level=="Undergraduate" && studentStatus=="newStudent"){
